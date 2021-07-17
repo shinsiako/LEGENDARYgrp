@@ -1,0 +1,66 @@
+.imageUpload {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid lightslategray;
+}
+
+.imageUpload__progress {
+  width: 100%;
+}
+
+.btn3 {
+  font-weight: bold;
+  font-family: "monsterrat";
+  padding: 5px 10px;
+  margin-top: 5px;
+  background: none;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  transition: 0.8s;
+  position:relative;
+  overflow: hidden;
+}
+
+
+.btn3::before{
+  content: "";
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index:-1;
+  transition: 0.8s;
+}
+
+.btn3::before{
+  bottom:0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn3:hover::before{
+  height:100%;
+}
+
+.btn3::before{
+  content: "";
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index:-1;
+  transition: 0.8s;
+}
+
+.btn3::before{
+  bottom:0;
+  border-radius: 50% 50% 50% 50;
+}
+

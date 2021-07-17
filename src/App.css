@@ -1,0 +1,321 @@
+body {
+  max-width: 1600px;
+  height: 1000px;
+}
+
+* {
+  margin: 0;
+}
+.app {
+  background-color: #fafafa;
+}
+
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  object-fit: contain;
+  padding: 20px;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+}
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__headerImage {
+  object-fit: contain;
+  width: 250px;
+}
+.app__headerImage1 {
+  object-fit: contain;
+  width: 250px;
+}
+
+.app__post {
+  padding: 20px;
+  margin-left: 450px;
+}
+
+.stories {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.storiesp {
+  font-size: 50px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.avatargroup {
+  display: flex;
+  justify-content: center;
+  margin-right: 55px;
+  margin-top: 20px;
+}
+
+.hidden-avatars {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid gray;
+  margin-left: 3px;
+}
+
+.overlay__avatar {
+  position: absolute;
+  top: 195px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 40%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.avatar:hover .overlay__avatar {
+  opacity: 1;
+  align-items: center;
+}
+
+.message {
+  padding: 40px;
+  text-align: center;
+}
+
+.buttonsignin {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btn5,
+.btn6,
+.btn4 {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+}
+
+.btn1,
+.btn2,
+.btn4,
+.btn5,
+.btn6 {
+  font-weight: bold;
+  font-family: "monsterrat";
+  padding: 5px 10px;
+  margin-top: 5px;
+  background: none;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn4:hover {
+  color: lightskyblue;
+}
+
+.btn1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn1:hover::before {
+  height: 100%;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn2::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn2:hover::before {
+  height: 100%;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn2::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn5::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn5:hover::before {
+  height: 100%;
+}
+
+.btn5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn5::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn6::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn6::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn6:hover::before {
+  height: 100%;
+}
+
+.btn6::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn6::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+
+
+.btn4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn4::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
+
+.btn4:hover::before {
+  height: 100%;
+}
+
+.btn4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: lightskyblue;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn4::before {
+  bottom: 0;
+  border-radius: 50% 50% 50% 50;
+}
